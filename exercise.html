@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercise Bootstrap 01/07</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://logomaker.designfreelogoonline.com/media/productdesigner/logo/resized/000816__travel_agency_logo_design_templates_free_travel_logo_maker-05.png"
+              alt="Logo travel agency"
+              style="height: 40px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Saldi">Saldi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#WelcomeSummer">Welcome Summer</a>
+                <!-- <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#LastMinute">Last Minute</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Recensioni">Recensioni</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Cerca posti da sogno"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Cerca
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="p-5">
+      <section
+        id="Home"
+        class="mb-5 bg-body-tertiary d-flex flex-column align-items-center align-items-lg-start shadow-sm"
+      >
+        <div class="border-bottom border-dark-subtle m-3 p-2 text-center">
+          <h1 class="fs-1 text-body-tertiary">Sunrise Travels</h1>
+          <h2 class="fs-2 text-body-tertiary">Breathe again</h2>
+        </div>
+        <p class="text-body-tertiary fst-italic fs-3 px-4">
+          Scopri le destinazioni più calde del momento!
+        </p>
+        <div class="d-flex flex-column flex-lg-row justify-content-between">
+          <button
+            class="my-4 py-2 px-4 ms-4 bg-info text-light fw-bold border-0 rounded"
+          >
+            Prenota ora
+          </button>
+          <button
+            class="my-4 py-2 px-4 ms-4 bg-info text-light fw-bold border-0 rounded"
+            id="countTravels"
+          >
+            Numero viaggi disponibili
+          </button>
+          <button
+            class="my-4 py-2 px-4 ms-4 bg-info text-light fw-bold border-0 rounded"
+            id="deleteCards"
+          >
+            Elimina card
+          </button>
+        </div>
+      </section>
+      <section id="Saldi" class="mb-4">
+        <div class="d-flex justify-content-between">
+          <h1>Saldi</h1>
+          <p>
+            <button
+              class="btn border-0 text-info"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample"
+              aria-expanded="true"
+              aria-controls="collapseWidthExample"
+            >
+              Nascondi sezione
+            </button>
+          </p>
+        </div>
+        <div
+          id="collapseWidthExample"
+          class="container collapse show collapse-horizontal"
+        >
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
+            <div class="col">
+              <div class="card border border-2 border-info">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border border-2 border-info">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border border-2 border-info">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-md-none d-lg-block">
+              <div class="card border border-2 border-info">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="WelcomeSummer">
+        <div class="d-flex justify-content-between">
+          <h1>Welcome Summer</h1>
+          <p>
+            <button
+              class="btn border-0 text-info"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWelcomeSummer"
+              aria-expanded="true"
+              aria-controls="collapseWelcomeSummer"
+            >
+              Nascondi sezione
+            </button>
+          </p>
+        </div>
+        <div
+          id="collapseWelcomeSummer"
+          class="container collapse show collapse-horizontal"
+        >
+          <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 g-3">
+            <div class="col">
+              <div class="card shadow">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img
+                  src="https://2.bp.blogspot.com/-eKlTWjqvzi8/Vy3y4xaFmBI/AAAAAAAASK8/fXOL8MbRi8cROLMbcUegUqCaJj7EBmbaQCLcB/s640/kYkBnRn.jpg"
+                  class="card-img-top"
+                  alt="Maldives"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destinazione</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="OffertaGiorno" class="mt-5">
+        <h1 class="mb-4">Offerta del giorno</h1>
+        <article class="container">
+          <div class="row row-cols-2">
+            <div class="col">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/passare-la-quarantena-alle-maldive-1586273801.jpg?resize=480:*"
+                class="img-fluid border rounded shadow travel"
+                alt="Maldives"
+              />
+            </div>
+            <div class="col">
+              <div>
+                <h4 class="mb-0">Fushifaru Maldives</h4>
+                <p class="mb-2">15.01.2021 - 31.31.2021</p>
+                <p>Ville a partire da 500 euro, non fartele sfuggire!</p>
+                <button class="btn btn-dark rounded-5">Best offer</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="LastMinute" class="my-4">
+        <h1>Last Minute</h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-xl-6 g-4">
+            <div class="col rounded">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/passare-la-quarantena-alle-maldive-1586273801.jpg?resize=480:*"
+                class="img-fluid border rounded shadow travel"
+                alt="Maldives"
+              />
+            </div>
+            <div class="col rounded">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/passare-la-quarantena-alle-maldive-1586273801.jpg?resize=480:*"
+                class="img-fluid border rounded shadow travel"
+                alt="Maldives"
+              />
+            </div>
+            <div class="col rounded">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/passare-la-quarantena-alle-maldive-1586273801.jpg?resize=480:*"
+                class="img-fluid border rounded shadow travel"
+                alt="Maldives"
+              />
+            </div>
+            <div class="col rounded">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/passare-la-quarantena-alle-maldive-1586273801.jpg?resize=480:*"
+                class="img-fluid border rounded shadow travel"
+                alt="Maldives"
+              />
+            </div>
+            <div class="col rounded">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/passare-la-quarantena-alle-maldive-1586273801.jpg?resize=480:*"
+                class="img-fluid border rounded shadow travel"
+                alt="Maldives"
+              />
+            </div>
+            <div class="col rounded">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/passare-la-quarantena-alle-maldive-1586273801.jpg?resize=480:*"
+                class="img-fluid border rounded shadow travel"
+                alt="Maldives"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Recensioni">
+        <h1 class="text-center mt-5 mb-2">Dicono di noi</h1>
+        <article class="container">
+          <div class="row row-cols-1">
+            <div class="col mb-4">
+              <div class="row">
+                <div class="col col-2">
+                  <img
+                    src="https://thumbs.dreamstime.com/t/ic%C3%B4ne-anonyme-de-visage-profil-personne-grise-silhouette-avatar-masculin-d%C3%A9faut-texte-d-attente-photo-isolement-sur-le-fond-107327860.jpg"
+                    alt="user picture"
+                    class="border border-info border-2 rounded-circle me-3 img-fluid"
+                  />
+                </div>
+                <div class="col col-10 d-flex flex-column">
+                  <h4>Username</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, temporibus iste, consequatur officia a aliquid odio
+                    laboriosam optio sunt ut, fugit et quisquam non! Sequi
+                    officia expedita veritatis! Amet, reprehenderit?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="row">
+                <div class="col col-2">
+                  <img
+                    src="https://thumbs.dreamstime.com/t/ic%C3%B4ne-anonyme-de-visage-profil-personne-grise-silhouette-avatar-masculin-d%C3%A9faut-texte-d-attente-photo-isolement-sur-le-fond-107327860.jpg"
+                    alt="user picture"
+                    class="border border-info border-2 rounded-circle me-3 img-fluid"
+                  />
+                </div>
+                <div class="col col-10 d-flex flex-column">
+                  <h4>Username</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, temporibus iste, consequatur officia a aliquid odio
+                    laboriosam optio sunt ut, fugit et quisquam non! Sequi
+                    officia expedita veritatis! Amet, reprehenderit?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="row">
+                <div class="col col-2">
+                  <img
+                    src="https://thumbs.dreamstime.com/t/ic%C3%B4ne-anonyme-de-visage-profil-personne-grise-silhouette-avatar-masculin-d%C3%A9faut-texte-d-attente-photo-isolement-sur-le-fond-107327860.jpg"
+                    alt="user picture"
+                    class="border border-info border-2 rounded-circle me-3 img-fluid"
+                  />
+                </div>
+                <div class="col col-10 d-flex flex-column">
+                  <h4>Username</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, temporibus iste, consequatur officia a aliquid odio
+                    laboriosam optio sunt ut, fugit et quisquam non! Sequi
+                    officia expedita veritatis! Amet, reprehenderit?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-black text-center">
+      <button
+        class="btn btn-dark m-5"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Contattaci
+      </button>
+      <p class="text-light pb-5">
+        © 2021 Kalina Travel LTD. All Rights Reserved.
+      </p>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >La tua mail</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Scrivi qui il tuo messaggio!</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
